@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let num1=prompt("Enter Num1");
+    let num2=prompt("Enter Num2");
+    let op=prompt("Enter Operator from + ,- , * ,/");
+
+
+    function add(a,b){
+        let result=parseFloat(a) + parseFloat(b);
+        document.write("the result of addition is " + result);
+    }
+
+    function sub(a,b){
+        let result= a-b;
+        document.write("the result of subtraction is" + result);
+    }
+
+    function multiply(a,b){
+        let result= a*b;
+        document.write("the result of multiplication is" + result);
+    }
+
+    function divide(a,b){
+        let result=a/b;
+        document.write("the result of division is" + result);
+    }
+
+    if(op=="+"){
+        add(num1,num2);
+    }
+    else if(op=="-"){
+        sub(num1,num2);
+    }
+   else if(op=="*"){
+        multiply(num1,num2);
+    }
+    else if(op=="/"){
+        divide(num1,num2);
+    }
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
